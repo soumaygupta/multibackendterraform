@@ -1,5 +1,5 @@
 resource "google_compute_instance" "centos-7" {
-  name         = "gcpdeploy"
+  name         = var.instancename
   machine_type = "f1-micro"
   zone         = "us-central1-a"
   boot_disk {
